@@ -14,3 +14,7 @@ use App\Http\Controllers\trendingController;
 
 Route::get('/trending', [trendingController::class, 'index']);
 
+Route::get('/trending', function () {
+    return view('trending');
+});
+
