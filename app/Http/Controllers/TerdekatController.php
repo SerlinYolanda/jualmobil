@@ -1,6 +1,10 @@
 <?php
 
-class LoginController extends Controller
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class TerdekatController extends Controller
 {
     public function index()
     {

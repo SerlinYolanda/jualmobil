@@ -25,6 +25,12 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ListItemController;
 
+use App\Http\Controllers\TerdekatController;
+use App\Http\Controllers\EventController;
+
+Route::get('/terdekat', [TerdekatController::class, 'index']);
+Route::get('/event', [EventController::class, 'index']);
+
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/listitem', [ListItemController::class, 'index']);
