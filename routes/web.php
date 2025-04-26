@@ -18,3 +18,16 @@ Route::get('/trending', function () {
     return view('trending');
 });
 
+Route::get('/', function () {
+    return view('welcome');
+});
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ListItemController;
+
+Route::get('/login', [LoginController::class, 'index']);
+Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/listitem', [ListItemController::class, 'index']);
+
+
+
