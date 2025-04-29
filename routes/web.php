@@ -27,13 +27,12 @@ use App\Http\Controllers\ListItemController;
 
 use App\Http\Controllers\TerdekatController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\ProductController;
 
 Route::get('/terdekat', [TerdekatController::class, 'index']);
-Route::get('/event', [EventController::class, 'index']);
-
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/listitem', [ListItemController::class, 'index']);
-
-
+Route::get('/produk', [ProductController::class, 'index']);
+ 
 
